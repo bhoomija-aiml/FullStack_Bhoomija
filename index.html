@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us Page</title>
+  <style>
+    /* 1. Element selector */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4; /* HEX color */
+      margin: 20px;
+    }
+
+    h1 {
+      color: rgb(34, 85, 150); /* RGB color */
+    }
+
+    /* 2. Class selector */
+    .highlight {
+      background-color: rgba(255, 200, 0, 0.3); /* RGBA with transparency */
+      padding: 5px;
+    }
+
+    /* 3. ID selector */
+    #team {
+      color: hsl(200, 80%, 35%); /* HSL color */
+      font-weight: bold;
+    }
+
+    /* 4. Attribute selector */
+    a[target="_blank"] {
+      color: #d35400;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* 5. Pseudo-class selector */
+    a:hover {
+      color: green;
+    }
+
+    /* 6. Pseudo-element selector */
+    p::first-line {
+      font-weight: bold;
+      color: blue;
+    }
+
+    /* Unordered list styling */
+    ul.movies {
+      list-style-type: square;
+    }
+    ul.movies li {
+      margin: 5px 0;
+    }
+    /* Style the favorite movie uniquely */
+    ul.movies li.favorite {
+      color: red;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    /* Ordered list styling */
+    ol.cities {
+      list-style-type: upper-roman;
+      background: #e0f7fa;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    ol.cities li {
+      margin: 5px;
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <main>
+    <section>
+      <p class="highlight">
+        We are a <span id="team">creative team</span> of developers who love building simple, modern, and easy-to-use websites for everyone.</p>
+      <p>
+        Visit our <a href="https://github.com/" target="_blank">GitHub</a> to learn more about what we build.
+      </p>
+    </section>
+
+    <!-- Movies List -->
+    <section>
+      <h2>Favorite Movies</h2>
+      <ul class="movies">
+        <li>Vivah</li>
+        <li class="favorite">Hum Sath Sath Hai</li>
+        <li>Hum Aaapke Hai Kon</li>
+      </ul>
+    </section>
+
+    <!-- Cities List -->
+    <section>
+      <h2>Top Cities to Visit</h2>
+      <ol class="cities">
+        <li>Kashmir</li>
+        <li>Banaras</li>
+        <li>Mumbai</li>
+        <li>Udaipur</li>
+      </ol>
+    </section>
+  </main>
+
+</body>
+</html>
